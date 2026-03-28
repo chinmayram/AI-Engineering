@@ -1,0 +1,23 @@
+# Machine Learning and Data Science
+numpy>=1.24.0
+pandas>=2.0.0
+scikit-learn>=1.3.0
+joblib>=1.3.0
+
+# Deep Learning (optional)
+# tensorflow>=2.12.0
+# torch>=2.0.0
+
+# Visualization
+matplotlib>=3.7.0
+seaborn>=0.12.0
+
+# Development and Testing
+pytest>=7.4.0
+black>=23.9.0
+flake8>=6.0.0
+pylint>=2.17.0
+
+# Jupyter Notebooks (optional)
+# jupyter>=1.0.0
+# notebook>=7.0.0

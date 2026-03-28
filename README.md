@@ -34,7 +34,69 @@ This repository contains a collection of AI engineering projects spanning machin
 - Time series forecasting
 - Anomaly detection
 
+## Project Structure
+
+```
+AI-Engineering/
+├── src/                  # Source code
+│   ├── __init__.py
+│   └── model.py          # ML model implementation
+├── venv/                 # Python virtual environment (ignored in git)
+├── requirements.txt      # Python dependencies
+├── .gitignore           # Git ignore file
+└── README.md            # This file
+```
+
 ## Getting Started
+
+### Installation
+
+1. **Clone the repository:**
+   ```bash
+   git clone <repository-url>
+   cd AI-Engineering
+   ```
+
+2. **Create and activate virtual environment:**
+   ```bash
+   python -m venv venv
+   # On Windows:
+   .\venv\Scripts\Activate.ps1
+   # On macOS/Linux:
+   source venv/bin/activate
+   ```
+
+3. **Install dependencies:**
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+### Quick Start with ML Models
+
+```python
+from src.model import MLModel
+from sklearn.datasets import load_iris
+
+# Load data
+iris = load_iris()
+X, y = iris.data, iris.target
+
+# Create and train model
+model = MLModel(model_type='random_forest')
+metrics = model.train(X, y)
+
+print(f"Model Accuracy: {metrics['accuracy']:.4f}")
+
+# Make predictions
+predictions = model.predict(X[:5])
+print(f"Predictions: {predictions}")
+```
+
+### Running the Example
+
+```bash
+python src/model.py
+```
 
 Each project includes:
 - Detailed documentation
